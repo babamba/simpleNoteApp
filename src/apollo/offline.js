@@ -2,6 +2,9 @@ import { GET_NOTES } from "./query";
 
 // cache에 저장하는 부분
 
+//알아야될점은 cache와 로컬스토리지가 하나가 아니라 
+//캐쉬로 저장한 후 로컬스토리지에도 저장하여 해당 로컬스토리지에 저장된 값을 갖고오는것 
+
 export const saveNotes = (cache) => {
      // resolver에서 cache를 String변환후 로컬스토리지 저장
      const {notes} = cache.readQuery({ query: GET_NOTES});
