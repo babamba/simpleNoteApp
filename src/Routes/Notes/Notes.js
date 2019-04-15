@@ -63,7 +63,7 @@ export default class NotesContainer extends React.Component {
        return (
          <>
            <Header>
-               <Title> Nomad Notes
+               <Title> Notes
                     <Link to={"/add"}>
                          <Button>
                          <Plus />
